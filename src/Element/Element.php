@@ -31,7 +31,7 @@ use Core\ORM\Entity\Element as EntityElement;
 abstract class Element
 {
 
-    const MANIFEST_FILE = 'element.php';
+    const MANIFEST_FILE = 'element.manifest.php';
 
     /**
      * @var Data
