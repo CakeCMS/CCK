@@ -13,23 +13,15 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\ORM\Entity;
+namespace Test\App\Type\Catalog;
 
-use JBZoo\Data\Data;
-use Core\ORM\Entity\Entity;
+use CCK\Type\Type;
 
 /**
- * Class Element
+ * Class Payment
  *
- * @package CCK\Entity
+ * @package Test\App\Type\Catalog
  */
-abstract class Element extends Entity
+class Payment extends Type
 {
-
-    /**
-     * List of elements.
-     *
-     * @var Data
-     */
-    public $elements;
 }

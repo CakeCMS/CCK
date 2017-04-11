@@ -13,23 +13,23 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\ORM\Entity;
-
-use JBZoo\Data\Data;
-use Core\ORM\Entity\Entity;
+namespace CCK\Type;
 
 /**
- * Class Element
+ * Class Type
  *
- * @package CCK\Entity
+ * @package CCK\Type
  */
-abstract class Element extends Entity
+class Type extends TypeAbstract
 {
 
     /**
-     * List of elements.
+     * Get required/core elements.
      *
-     * @var Data
+     * @return array
      */
-    public $elements;
+    public function getRequiredElements()
+    {
+        return [];
+    }
 }

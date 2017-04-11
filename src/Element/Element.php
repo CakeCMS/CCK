@@ -21,7 +21,7 @@ use JBZoo\Data\Data;
 use JBZoo\Data\JSON;
 use JBZoo\Data\PHPArray;
 use Cake\Core\Configure;
-use Core\ORM\Entity\Element as EntityElement;
+use CCK\ORM\Entity\Element as EntityElement;
 
 /**
  * Class Element

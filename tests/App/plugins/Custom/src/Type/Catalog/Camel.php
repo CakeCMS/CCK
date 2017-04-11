@@ -13,23 +13,25 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\ORM\Entity;
+namespace Custom\Type\Catalog;
 
-use JBZoo\Data\Data;
-use Core\ORM\Entity\Entity;
+use CCK\Type\TypeAbstract;
 
 /**
- * Class Element
+ * Class Camel
  *
- * @package CCK\Entity
+ * @package Custom\Type\Catalog
  */
-abstract class Element extends Entity
+class Camel extends TypeAbstract
 {
 
     /**
-     * List of elements.
+     * Get required/core elements.
      *
-     * @var Data
+     * @return array
      */
-    public $elements;
+    public function getRequiredElements()
+    {
+        return ['id', 'alias'];
+    }
 }

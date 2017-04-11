@@ -22,7 +22,7 @@ use Cake\Utility\Text;
 use Cake\Core\Configure;
 use Cake\Core\ClassLoader;
 use CCK\Element\Exception\ElementException;
-use Core\ORM\Entity\Element as EntityElement;
+use CCK\ORM\Entity\Element as EntityElement;
 
 /**
  * Class Manager

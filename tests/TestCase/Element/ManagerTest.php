@@ -18,7 +18,7 @@ namespace CCK\Test\TestCase\Cck\Element;
 use Cake\I18n\I18n;
 use CCK\Element\Manager;
 use Core\TestSuite\TestCase;
-use Core\ORM\Entity\Element as ElementEntity;
+use CCK\ORM\Entity\Element as ElementEntity;
 
 /**
  * Class ManagerTest

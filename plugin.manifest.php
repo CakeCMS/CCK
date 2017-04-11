@@ -22,6 +22,6 @@ return [
         'license'     => 'MIT',
         'email'       => 'kalistratov.s.m@gmail.com',
         'url'         => 'http://cool-code.ru',
-        'description' => 'CCK plugin for UnionCMS'
+        'description' => 'CCK plugin for CakePHP CMS'
     ]
 ];

@@ -20,7 +20,7 @@ use JBZoo\Utils\Str;
 use Cake\Core\Configure;
 use CCK\Element\Element;
 use Core\TestSuite\TestCase;
-use Core\ORM\Entity\Element as ElementEntity;
+use CCK\ORM\Entity\Element as ElementEntity;
 
 /**
  * Class ElementTest
