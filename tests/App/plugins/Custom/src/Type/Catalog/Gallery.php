@@ -19,8 +19,8 @@ use CCK\Type\Type;
 
 /**
  * Class Gallery
- * 
- * @package Custom\Type
+ *
+ * @package Custom\Type\Catalog
  */
 class Gallery extends Type
 {
