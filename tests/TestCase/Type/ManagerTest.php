@@ -58,11 +58,11 @@ class ManagerTest extends TestCase
 
     public function testSetTypeFromPlugin()
     {
-        Plugin::load('Custom', ['autoload' => true]);
+        Plugin::load('Custom');
 
         $manager = Manager::getInstance()->getTypeManager();
 
-        $type    = $manager->set('custom.gallery', 'catalog');
+        $type = $manager->set('custom.gallery', 'catalog');
         self::assertInstanceOf('Custom\Type\Catalog\Gallery', $type);
         self::assertSame('custom.gallery', $type->id);
         self::assertSame('catalog', $type->groupId);
