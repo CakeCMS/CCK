@@ -44,7 +44,7 @@ class Manager
     public function set($type, $group)
     {
         $hash = implode('///', [$type, $group]);
-        if ($class = App::className(Inflector::camelize($type), 'Type/' . Inflector::camelize($group))) {
+        if ($class = App::className($this->_getClassName($type), 'Type/' . Inflector::camelize($group))) {
             $typeObject = new $class($type, $group);
         } else {
             $typeObject = new Type($type, $group);
@@ -72,5 +72,22 @@ class Manager
         }
 
         return null;
+    }
+
+    /**
+     * Get current class name.
+     *
+     * @param string $type
+     * @return string
+     */
+    protected function _getClassName($type)
+    {
+        list ($plugin, $className) = pluginSplit($type);
+        $return = Inflector::camelize($className);
+        if ($plugin !== null) {
+            $return = Inflector::camelize($plugin) . '.' . $return;
+        }
+
+        return $return;
     }
 }
