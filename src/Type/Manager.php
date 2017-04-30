@@ -13,7 +13,7 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Type;
+namespace Cck\Type;
 
 use Cake\Core\App;
 use JBZoo\Utils\Arr;

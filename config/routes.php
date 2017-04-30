@@ -12,3 +12,12 @@
  * @link      https://github.com/CakeCMS/CCK".
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
+
+use Cake\Routing\Router;
+use Cake\Routing\RouteBuilder;
+
+Router::plugin('Cck', ['path' => '/'], function (RouteBuilder $routeBuilder) {
+    $routeBuilder->prefix('admin', function (RouteBuilder $routeBuilder) {
+        $routeBuilder->connect('/cck/:controller/:action/*', []);
+    });
+});

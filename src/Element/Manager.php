@@ -13,7 +13,7 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Element;
+namespace Cck\Element;
 
 use JBZoo\Utils\FS;
 use JBZoo\Utils\Str;
@@ -21,13 +21,13 @@ use Cake\Utility\Hash;
 use Cake\Utility\Text;
 use Cake\Core\Configure;
 use Cake\Core\ClassLoader;
-use CCK\Element\Exception\ElementException;
-use CCK\ORM\Entity\Element as EntityElement;
+use Cck\Element\Exception\ElementException;
+use Cck\ORM\Entity\Element as EntityElement;
 
 /**
  * Class Manager
  *
- * @package Core\Element
+ * @package Cck\Element
  */
 class Manager
 {

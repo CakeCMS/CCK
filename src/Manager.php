@@ -13,18 +13,20 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK;
+namespace Cck;
 
-use CCK\Type\Manager as TypeManager;
-use CCK\Element\Manager as ElementManager;
+use Cck\Type\Manager as TypeManager;
+use Cck\Element\Manager as ElementManager;
 
 /**
  * Class Manager
  *
- * @package CCK
+ * @package Cck
  */
 class Manager
 {
+
+    const APP_DIR = 'cck';
 
     /**
      * Application Init flag.

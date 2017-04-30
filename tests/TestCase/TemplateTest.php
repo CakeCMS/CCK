@@ -15,22 +15,24 @@
 
 namespace Cck\Test\TestCase;
 
-use Cck\Manager;
+use Cck\Template;
+use JBZoo\Utils\FS;
 use Core\TestSuite\TestCase;
 
 /**
- * Class ManagerTest
+ * Class TemplateTest
  *
  * @package Cck\Test\TestCase
  */
-class ManagerTest extends TestCase
+class TemplateTest extends TestCase
 {
-    
-    public function testGetInstances()
+
+    public function testClassName()
     {
-        $cck = Manager::getInstance();
-        self::assertInstanceOf('CCK\Manager', $cck);
-        self::assertInstanceOf('CCK\Type\Manager', $cck->getTypeManager());
-        self::assertInstanceOf('CCK\Element\Manager', $cck->getElementManager());
+        $template = new Template('test', __DIR__);
+        self::assertInstanceOf('Cck\Template', $template);
+        self::assertInstanceOf('Core\Cms', $template->cms);
+        self::assertSame('test', $template->name);
+        self::assertSame(FS::clean(__DIR__, '/'), $template->resource);
     }
 }

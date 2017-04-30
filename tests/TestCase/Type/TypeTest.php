@@ -13,15 +13,15 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Test\TestCase\Cck\Type;
+namespace Cck\Test\TestCase\Type;
 
-use CCK\Type\Type;
+use Cck\Type\Type;
 use Core\TestSuite\TestCase;
 
 /**
  * Class TypeTest
  *
- * @package CCK\Test\TestCase\Cck\Type
+ * @package Cck\Test\TestCase\Type
  */
 class TypeTest extends TestCase
 {

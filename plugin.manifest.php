@@ -15,7 +15,7 @@
 
 return [
     'meta' => [
-        'name'        => 'CCK',
+        'name'        => 'Cck',
         'author'      => 'Cheren',
         'version'     => '0.0.1',
         'copyright'   => 'CakePHP CMS',

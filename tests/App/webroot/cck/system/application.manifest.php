@@ -12,24 +12,3 @@
  * @link      https://github.com/CakeCMS/CCK".
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
-
-namespace Cck\ORM\Entity;
-
-use JBZoo\Data\Data;
-use Core\ORM\Entity\Entity;
-
-/**
- * Class Element
- *
- * @package Cck\Entity
- */
-abstract class Element extends Entity
-{
-
-    /**
-     * List of elements.
-     *
-     * @var Data
-     */
-    public $elements;
-}

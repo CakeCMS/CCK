@@ -13,12 +13,12 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Type;
+namespace Cck\Type;
 
 /**
  * Class Type
  *
- * @package CCK\Type
+ * @package Cck\Type
  */
 class Type extends TypeAbstract
 {

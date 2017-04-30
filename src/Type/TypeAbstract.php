@@ -13,14 +13,14 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Type;
+namespace Cck\Type;
 
 use JBZoo\Utils\Str;
 
 /**
  * Class TypeAbstract
  *
- * @package CCK\Type
+ * @package Cck\Type
  */
 abstract class TypeAbstract
 {

@@ -13,8 +13,11 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
+use Core\Theme;
+use Core\Plugin;
 use Cake\Mailer\Email;
 use Cake\Core\Configure;
+use Cake\Network\Request;
 use Cake\Routing\DispatcherFactory;
 use Cake\Datasource\ConnectionManager;
 
@@ -58,3 +61,11 @@ Email::setConfigTransport(Configure::consume('EmailTransport'));
 
 DispatcherFactory::add('Routing');
 DispatcherFactory::add('ControllerFactory');
+
+//  Setup detector of theme.
+Request::addDetector('theme', function ($request) {
+    /** @var Cake\Network\Request $request */
+    $theme = Theme::setup($request->param('prefix'));
+    $request->offsetSet('theme', $theme);
+    return Plugin::loaded($theme);
+});

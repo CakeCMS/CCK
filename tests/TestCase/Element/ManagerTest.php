@@ -13,17 +13,17 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Test\TestCase\Cck\Element;
+namespace Cck\Test\TestCase\Element;
 
 use Cake\I18n\I18n;
-use CCK\Element\Manager;
+use Cck\Element\Manager;
 use Core\TestSuite\TestCase;
-use CCK\ORM\Entity\Element as ElementEntity;
+use Cck\ORM\Entity\Element as ElementEntity;
 
 /**
  * Class ManagerTest
  *
- * @package Core\Test\TestCase\Element
+ * @package Cck\Test\TestCase\Element
  */
 class ManagerTest extends TestCase
 {
@@ -36,11 +36,11 @@ class ManagerTest extends TestCase
 
     public function testClassName()
     {
-        self::assertInstanceOf('CCK\Element\Manager', $this->_getManager());
+        self::assertInstanceOf('Cck\Element\Manager', $this->_getManager());
     }
 
     /**
-     * @expectedException \CCK\Element\Exception\ElementException
+     * @expectedException \Cck\Element\Exception\ElementException
      */
     public function testCreateTypeIsEmpty()
     {
@@ -48,7 +48,7 @@ class ManagerTest extends TestCase
     }
 
     /**
-     * @expectedException \CCK\Element\Exception\ElementException
+     * @expectedException \Cck\Element\Exception\ElementException
      */
     public function testCreateGroupIsEmpty()
     {
@@ -56,7 +56,7 @@ class ManagerTest extends TestCase
     }
 
     /**
-     * @expectedException \CCK\Element\Exception\ElementException
+     * @expectedException \Cck\Element\Exception\ElementException
      */
     public function testNotFoundElementClass()
     {
@@ -75,7 +75,7 @@ class ManagerTest extends TestCase
         self::assertInstanceOf('JBZoo\Data\JSON', $element->config);
         self::assertInstanceOf('Elements\Item\TitleElement', $element);
         self::assertInstanceOf('JBZoo\Data\PHPArray', $element->loadMeta());
-        self::assertInstanceOf('CCK\Test\TestCase\Cck\Element\CustomEntity', $element->getEntity());
+        self::assertInstanceOf('CCK\Test\TestCase\Element\CustomEntity', $element->getEntity());
     }
 
     /**
@@ -90,7 +90,7 @@ class ManagerTest extends TestCase
 /**
  * Class CustomEntity
  *
- * @package CCK\Test\TestCase\Cck\Element
+ * @package Cck\Test\TestCase\Element
  */
 class CustomEntity extends ElementEntity
 {

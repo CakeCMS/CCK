@@ -13,19 +13,19 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Test\TestCase\Cck\Element;
+namespace Cck\Test\TestCase\Element;
 
 use JBZoo\Utils\FS;
 use JBZoo\Utils\Str;
 use Cake\Core\Configure;
-use CCK\Element\Element;
+use Cck\Element\Element;
 use Core\TestSuite\TestCase;
-use CCK\ORM\Entity\Element as ElementEntity;
+use Cck\ORM\Entity\Element as ElementEntity;
 
 /**
  * Class ElementTest
  *
- * @package CCK\Test\TestCase\Cck\Element
+ * @package Cck\Test\TestCase\Element
  */
 class ElementTest extends TestCase
 {
@@ -33,7 +33,7 @@ class ElementTest extends TestCase
     public function testClassName()
     {
         $element = new TestElement('Title', 'Item');
-        self::assertInstanceOf('CCK\Test\TestCase\Cck\Element\TestElement', $element);
+        self::assertInstanceOf('CCK\Test\TestCase\Element\TestElement', $element);
     }
 
     public function testGetPath()
@@ -102,7 +102,7 @@ class ElementTest extends TestCase
         self::assertNull($element->getEntity());
 
         $element->setEntity(new TestEntity());
-        self::assertInstanceOf('CCK\Test\TestCase\Cck\Element\TestEntity', $element->getEntity());
+        self::assertInstanceOf('CCK\Test\TestCase\Element\TestEntity', $element->getEntity());
     }
 }
 

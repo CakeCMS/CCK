@@ -13,23 +13,15 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace Cck\ORM\Entity;
+namespace Cck\Controller\Admin;
 
-use JBZoo\Data\Data;
-use Core\ORM\Entity\Entity;
+use Core\Controller\AppController as CoreAppController;
 
 /**
- * Class Element
+ * Class AppController
  *
- * @package Cck\Entity
+ * @package Cck\Controller\Admin
  */
-abstract class Element extends Entity
+class AppController extends CoreAppController
 {
-
-    /**
-     * List of elements.
-     *
-     * @var Data
-     */
-    public $elements;
 }

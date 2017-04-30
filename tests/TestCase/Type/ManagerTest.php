@@ -13,16 +13,16 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Test\TestCase\Cck\Type;
+namespace Cck\Test\TestCase\Type;
 
-use CCK\Manager;
+use Cck\Manager;
 use Core\Plugin;
 use Core\TestSuite\TestCase;
 
 /**
- * Class Manager
- *
- * @package CCK\Test\TestCase\Cck\Type
+ * Class ManagerTest
+ * 
+ * @package Cck\Test\TestCase\Type
  */
 class ManagerTest extends TestCase
 {

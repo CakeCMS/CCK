@@ -13,7 +13,7 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Element;
+namespace Cck\Element;
 
 use JBZoo\Utils\FS;
 use JBZoo\Utils\Str;
@@ -21,12 +21,12 @@ use JBZoo\Data\Data;
 use JBZoo\Data\JSON;
 use JBZoo\Data\PHPArray;
 use Cake\Core\Configure;
-use CCK\ORM\Entity\Element as EntityElement;
+use Cck\ORM\Entity\Element as EntityElement;
 
 /**
  * Class Element
  *
- * @package CCK\Element
+ * @package Cck\Element
  */
 abstract class Element
 {

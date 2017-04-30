@@ -13,14 +13,14 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace CCK\Element\Exception;
+namespace Cck\Element\Exception;
 
 use Cake\Core\Exception\Exception;
 
 /**
  * Class ElementException
  *
- * @package CCK\Element\Exception
+ * @package Cck\Element\Exception
  */
 class ElementException extends Exception
 {

@@ -13,23 +13,15 @@
  * @author    Sergey Kalistratov <kalistratov.s.m@gmail.com>
  */
 
-namespace Cck\ORM\Entity;
+namespace Test\App\View;
 
-use JBZoo\Data\Data;
-use Core\ORM\Entity\Entity;
+use Core\View\AppView as CoreAppView;
 
 /**
- * Class Element
+ * Class AppView
  *
- * @package Cck\Entity
+ * @package Test\App\View
  */
-abstract class Element extends Entity
+class AppView extends CoreAppView
 {
-
-    /**
-     * List of elements.
-     *
-     * @var Data
-     */
-    public $elements;
 }
