@@ -55,8 +55,7 @@ class ApplicationsController extends AppController
         $app = $this->Applications->newEntity();
         if ($this->request->is('post')) {
             $app = $this->Applications->patchEntity($app, $this->request->getData());
-            $result = $this->Applications->save($app);
-            if ($result) {
+            if ($result = $this->Applications->save($app)) {
                 $this->Flash->success(__d('cck', 'The application {0} has been saved.', sprintf(
                     '<strong>«%s»</strong>',
                     $result->get('name')

@@ -16,14 +16,17 @@
 namespace Cck\Model\Table;
 
 use Core\ORM\Table;
+use JBZoo\Data\Data;
+use JBZoo\Utils\Arr;
+use Cake\Event\Event;
 use Cake\Validation\Validator;
 
 /**
- * Class ApplicationsTable
+ * Class TypesTable
  *
  * @package Cck\Model\Table
  */
-class ApplicationsTable extends Table
+class TypesTable extends Table
 {
 
     /**
@@ -37,11 +40,11 @@ class ApplicationsTable extends Table
     {
         $this
             ->setPrimaryKey(TABLE_PRIMARY_KEY)
-            ->setTable(CMS_TABLE_APPLICATIONS);
+            ->setTable(CMS_TABLE_TYPES);
     }
 
     /**
-     * Default validation rules.
+     * Default validate rules.
      *
      * @param Validator $validator
      * @return Validator
@@ -52,11 +55,8 @@ class ApplicationsTable extends Table
             ->requirePresence('name')
             ->notEmpty('name', __d('cck', 'Please, setup application name'))
 
-            ->requirePresence('alias')
-            ->notEmpty('alias', __d('cck', 'Please, setup application alias'))
-
-            ->requirePresence('template')
-            ->notEmpty('template', __d('cck', 'Please, choose application template'));
+            ->requirePresence('slug')
+            ->notEmpty('slug', __d('cck', 'Please, setup application alias'));
 
         return $validator;
     }

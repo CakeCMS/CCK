@@ -32,12 +32,21 @@ Nav::add('sidebar', 'cck', [
         ],
         'new' => [
             'title' => __d('cck', 'New application'),
-            'weight' => 10,
+            'weight' => 20,
             'url' => [
                 'plugin' => 'Cck',
                 'controller' => 'Applications',
                 'action' => 'newApp'
             ]
         ],
+        'types' => [
+            'title' => __d('cck', 'Types'),
+            'weight' => 30,
+            'url' => [
+                'plugin' => 'Cck',
+                'controller' => 'Types',
+                'action' => 'index'
+            ]
+        ]
     ]
 ]);

@@ -34,6 +34,8 @@ class ApplicationsControllerTest extends IntegrationTestCase
     protected $_corePlugin = 'Cck';
 
     /**
+     * Default request data.
+     *
      * @var array
      */
     protected $_data = [

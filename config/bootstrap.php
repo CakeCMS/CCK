@@ -25,6 +25,9 @@ if (!defined('CCK_APP_DIR')) {
 if (!defined('CMS_TABLE_APPLICATIONS')) {
     define('CMS_TABLE_APPLICATIONS', 'cck_applications');
 }
+if (!defined('CMS_TABLE_TYPES')) {
+    define('CMS_TABLE_TYPES', 'cck_types');
+}
 
 $cms     = Cms::getInstance();
 $plugins = (array) Plugin::loaded();
